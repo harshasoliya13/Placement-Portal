@@ -9,8 +9,8 @@ JWT_SECRET: JsonWebToken Secret to generate token of authentication
 
 # Install & Run
 ```bash
-git clone https://github.com/cybersaksham/Placement-Portal-SE
-cd Placement-Portal-SE
+git clone https://github.com/harshasoliya13/Placement-Portal
+cd Placement-Portal
 npm install
 npm run dev
 # Go to localhost:3000
