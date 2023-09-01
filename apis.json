@@ -1,0 +1,488 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "Placement Portal SE",
+  "dateExported": "2022-12-12T08:23:59.519Z",
+  "version": "1.1",
+  "folders": [
+    {
+      "_id": "2820e631-b307-489b-9d7b-ea819b6a0e34",
+      "name": "Admin",
+      "containerId": "",
+      "created": "2022-12-12T05:48:59.006Z",
+      "sortNum": 10000
+    },
+    {
+      "_id": "2d85a00f-f4c4-4dc7-92af-d6f6cbe03f51",
+      "name": "Application",
+      "containerId": "",
+      "created": "2022-12-12T05:51:24.414Z",
+      "sortNum": 20000
+    },
+    {
+      "_id": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Auth",
+      "containerId": "",
+      "created": "2022-12-12T05:55:36.723Z",
+      "sortNum": 30000
+    },
+    {
+      "_id": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Hiring",
+      "containerId": "",
+      "created": "2022-12-12T07:39:16.035Z",
+      "sortNum": 40000
+    },
+    {
+      "_id": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Posting",
+      "containerId": "",
+      "created": "2022-12-12T08:16:17.463Z",
+      "sortNum": 50000
+    }
+  ],
+  "requests": [
+    {
+      "_id": "5f9b9235-25b7-4c8f-8d31-15e4b5ae300a",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2820e631-b307-489b-9d7b-ea819b6a0e34",
+      "name": "Ban User",
+      "url": "http://localhost:3000/api/admin/ban",
+      "method": "PUT",
+      "sortNum": 10000,
+      "created": "2022-12-12T05:49:08.168Z",
+      "modified": "2022-12-12T05:51:03.157Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "auth-token", "value": "" }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\": \"\",\n  \"type\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "16ccbe47-7508-4745-8bba-9f7bae150e87",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2820e631-b307-489b-9d7b-ea819b6a0e34",
+      "name": "UnBan User",
+      "url": "http://localhost:3000/api/admin/unban",
+      "method": "PUT",
+      "sortNum": 20000,
+      "created": "2022-12-12T05:50:09.794Z",
+      "modified": "2022-12-12T05:50:59.577Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "auth-token", "value": "" }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\": \"\",\n  \"type\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "0bc7b13a-5f4a-4374-96b2-f7a76d38acdb",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2d85a00f-f4c4-4dc7-92af-d6f6cbe03f51",
+      "name": "Get By ID",
+      "url": "http://localhost:3000/api/application/apply?applicationId",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-12-12T05:51:32.294Z",
+      "modified": "2022-12-12T05:52:30.086Z",
+      "headers": [],
+      "params": [{ "name": "applicationId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "67349433-e738-4bdf-97c1-2b98e4943d6a",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Get All",
+      "url": "http://localhost:3000/api/posting/allPosting",
+      "method": "GET",
+      "sortNum": 20000,
+      "created": "2022-12-12T08:16:17.463Z",
+      "modified": "2022-12-12T08:17:34.681Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "bc21f269-2a11-490f-a801-20b508a7779a",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2d85a00f-f4c4-4dc7-92af-d6f6cbe03f51",
+      "name": "Get By Posting",
+      "url": "http://localhost:3000/api/application/byPosting?postingId",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-12T05:52:36.891Z",
+      "modified": "2022-12-12T05:53:11.125Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "postingId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "c4f30a7b-0915-488e-af7f-97db6d58889d",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2d85a00f-f4c4-4dc7-92af-d6f6cbe03f51",
+      "name": "Apply",
+      "url": "http://localhost:3000/api/application/apply",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-12-12T05:54:22.601Z",
+      "modified": "2022-12-12T05:54:59.152Z",
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "auth-token", "value": "" }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"posting\": \"\",\n  \"resume\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "fa7e6050-92e5-4242-8f34-c22376e9dd48",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Get By Company",
+      "url": "http://localhost:3000/api/posting/byCompany?companyId",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:16:17.464Z",
+      "modified": "2022-12-12T08:16:55.532Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "companyId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "72c61420-0271-42a2-bfdf-74a82f852463",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Close Post",
+      "url": "http://localhost:3000/api/posting/closePost?postingId",
+      "method": "PUT",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:16:17.465Z",
+      "modified": "2022-12-12T08:20:01.745Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "postingId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "f9be1e40-8ea1-4f4a-b04a-8c4cbee05729",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Get Intern",
+      "url": "http://localhost:3000/api/posting/internPost?internId",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:18:07.943Z",
+      "modified": "2022-12-12T08:18:24.610Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "internId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "117c422d-7b6b-4736-ab80-03334223fef5",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Get Job",
+      "url": "http://localhost:3000/api/posting/jobPost?jobId",
+      "method": "GET",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:18:33.170Z",
+      "modified": "2022-12-12T08:22:32.375Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "jobId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "7cb3c660-efaa-4b07-9267-125cd13468db",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Create Intern",
+      "url": "http://localhost:3000/api/posting/internPost",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:20:24.904Z",
+      "modified": "2022-12-12T08:22:20.362Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"role\": \"\",\n  \"branches\": [],\n  \"minCGPA\": 0,\n  \"location\": \"\",\n  \"graduationYear\": 0,\n  \"joiningDate\": \"\",\n  \"stipend\": 0,\n  \"duration\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "5be700ac-7672-4645-9ebc-7e65ab4591a0",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "ff58f108-8d7d-4b3b-a63a-85d04117c3c7",
+      "name": "Create Job",
+      "url": "http://localhost:3000/api/posting/jobPost",
+      "method": "POST",
+      "sortNum": 30000,
+      "created": "2022-12-12T08:22:28.366Z",
+      "modified": "2022-12-12T08:22:54.567Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"role\": \"\",\n  \"branches\": [],\n  \"minCGPA\": 0,\n  \"location\": \"\",\n  \"graduationYear\": 0,\n  \"joiningDate\": \"\",\n  \"ctc\": 0,\n  \"shares\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "d2de5778-e64b-4fcd-8f1f-73ff5da71fbc",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "2d85a00f-f4c4-4dc7-92af-d6f6cbe03f51",
+      "name": "Get By Student",
+      "url": "http://localhost:3000/api/application/byStudent",
+      "method": "GET",
+      "sortNum": 40000,
+      "created": "2022-12-12T05:53:36.775Z",
+      "modified": "2022-12-12T05:53:56.580Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "cd8eff59-f79e-47b3-8dff-1ef10c246ea3",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Login",
+      "url": "http://localhost:3000/api/auth/login",
+      "method": "POST",
+      "sortNum": 50000,
+      "created": "2022-12-12T05:55:45.158Z",
+      "modified": "2022-12-12T05:56:26.975Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\": \"\",\n  \"password\": \"\",\n  \"type\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "b645b777-ca63-4073-ae01-15958c0333a5",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Fetch By ID",
+      "url": "http://localhost:3000/api/auth/user?userId",
+      "method": "GET",
+      "sortNum": 55000,
+      "created": "2022-12-12T05:57:44.155Z",
+      "modified": "2022-12-12T05:58:04.228Z",
+      "headers": [],
+      "params": [{ "name": "userId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "69d720f7-79de-4443-88a6-7cec6fd12f06",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Fetch By Token",
+      "url": "http://localhost:3000/api/auth/user",
+      "method": "POST",
+      "sortNum": 60000,
+      "created": "2022-12-12T05:57:09.755Z",
+      "modified": "2022-12-12T05:57:34.564Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "8fc11727-f849-4d50-81ab-88758c9ae315",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Get By ID",
+      "url": "http://localhost:3000/api/hiring/byId?hiringId&type",
+      "method": "GET",
+      "sortNum": 60000,
+      "created": "2022-12-12T07:39:26.190Z",
+      "modified": "2022-12-12T07:39:51.397Z",
+      "headers": [],
+      "params": [
+        { "name": "hiringId", "value": "", "isPath": false },
+        { "name": "type", "value": "", "isPath": false }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "b91f62e1-c81b-4518-b201-4bd4a94c4047",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Get All Companies",
+      "url": "http://localhost:3000/api/auth/allCompanies",
+      "method": "GET",
+      "sortNum": 70000,
+      "created": "2022-12-12T05:58:18.009Z",
+      "modified": "2022-12-12T05:58:35.924Z",
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "_id": "ae36374a-9b9a-4d84-a799-e3f6fe3682b4",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Get By Posting",
+      "url": "http://localhost:3000/api/hiring/byPosting?postingId",
+      "method": "GET",
+      "sortNum": 70000,
+      "created": "2022-12-12T07:40:04.714Z",
+      "modified": "2022-12-12T07:40:23.041Z",
+      "headers": [],
+      "params": [{ "name": "postingId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "c1055de2-5434-47ec-9c9c-5f43a5d55abf",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "",
+      "name": "Get Stats",
+      "url": "http://localhost:3000/api/stats?year&type",
+      "method": "GET",
+      "sortNum": 70000,
+      "created": "2022-12-12T08:23:16.532Z",
+      "modified": "2022-12-12T08:23:39.044Z",
+      "headers": [],
+      "params": [
+        { "name": "year", "value": "", "isPath": false },
+        { "name": "type", "value": "", "isPath": false }
+      ],
+      "tests": []
+    },
+    {
+      "_id": "64c65169-d251-4e4b-a1ad-bc6707e0fd82",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Get Company By ID",
+      "url": "http://localhost:3000/api/auth/company?companyId",
+      "method": "GET",
+      "sortNum": 80000,
+      "created": "2022-12-12T05:59:09.722Z",
+      "modified": "2022-12-12T05:59:28.896Z",
+      "headers": [],
+      "params": [{ "name": "companyId", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "b505b093-8c11-41af-8c47-a0c72ba7b016",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Get By Student",
+      "url": "http://localhost:3000/api/hiring/byStudent?type",
+      "method": "GET",
+      "sortNum": 80000,
+      "created": "2022-12-12T07:40:48.222Z",
+      "modified": "2022-12-12T07:41:06.904Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [{ "name": "type", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "ad8babc3-9747-4086-8fbc-0ab8797a9fd2",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Create Company",
+      "url": "http://localhost:3000/api/auth/company",
+      "method": "POST",
+      "sortNum": 90000,
+      "created": "2022-12-12T05:59:34.649Z",
+      "modified": "2022-12-12T06:00:41.736Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"\",\n  \"email\": \"\",\n  \"password\": \"\",\n  \"type\": \"\",\n  \"headoffice\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "512c32ac-d51c-484e-937b-f40b3d82091f",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Accept",
+      "url": "http://localhost:3000/api/hiring/accept",
+      "method": "POST",
+      "sortNum": 90000,
+      "created": "2022-12-12T07:41:27.616Z",
+      "modified": "2022-12-12T07:41:52.038Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"applicationId\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "1724737d-df10-4f36-a7a5-ef4db3d2dacf",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Get Student By ID",
+      "url": "http://localhost:3000/api/auth/student?sid",
+      "method": "GET",
+      "sortNum": 95000,
+      "created": "2022-12-12T06:01:05.075Z",
+      "modified": "2022-12-12T07:38:43.474Z",
+      "headers": [],
+      "params": [{ "name": "sid", "value": "", "isPath": false }],
+      "tests": []
+    },
+    {
+      "_id": "ce91cc28-e470-4b0e-940b-41e149c52a90",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "6977cd23-4056-4e16-8b59-05823e5158ae",
+      "name": "Create Student",
+      "url": "http://localhost:3000/api/auth/student",
+      "method": "POST",
+      "sortNum": 100000,
+      "created": "2022-12-12T06:01:09.189Z",
+      "modified": "2022-12-12T08:21:55.317Z",
+      "headers": [{ "name": "Content-Type", "value": "application/json" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"name\": \"\",\n  \"sid\": \"\",\n  \"password\": \"\",\n  \"degree\": \"\",\n  \"branch\": \"\",\n  \"graduationYear\": 0,\n  \"dob\": \"\",\n  \"skills\": [],\n  \"cgpa\": 0\n}",
+        "form": []
+      },
+      "tests": []
+    },
+    {
+      "_id": "24f93353-bd9c-4a5f-9978-48074ebb43d5",
+      "colId": "f51c3300-d8d5-4761-81d3-95fe38672d16",
+      "containerId": "dc4492d4-911c-4378-bf3a-15d7329961b0",
+      "name": "Reject",
+      "url": "http://localhost:3000/api/hiring/reject",
+      "method": "POST",
+      "sortNum": 100000,
+      "created": "2022-12-12T08:15:43.326Z",
+      "modified": "2022-12-12T08:15:51.476Z",
+      "headers": [{ "name": "auth-token", "value": "" }],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"applicationId\": \"\"\n}",
+        "form": []
+      },
+      "tests": []
+    }
+  ]
+}
